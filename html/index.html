@@ -6,76 +6,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/style.css">
-    
+    <link rel="stylesheet" href="../media/style.media.css">
+    <link rel="shortcut icon" href="../images/heart.png">
 </head>
 <body>
-    <div class="header-pc">
-        <div class="yandex-logo">
-            <a href="#">
-                <img  src="https://i0.wp.com/apptractor.ru/wp-content/uploads/2017/03/yandex.png?fit=512%2C512&ssl=1" >
-                <img style="border-radius: 15px ;" src="data:image/jpeg;base64,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" >
-                <span>Маркет</span>
-            </a>
-            <a href="#">
-                <div class="lines">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                Каталог
-            </a>
-        </div>
-        <div class="search">
-            <button class="btn">
-                Везде
-                <div class="arrow">
-                    <img src="../images/up-arrow (1).png" >
-                    <img src="../images/down-arrow.png">
-                </div>
-            </button>
-            <form>
-                <input type="text" placeholder="Искать товары">
-            </form>
-            <button class="search-btn">Найти</button>
-        </div>
-        
-        <div class="right">
+    
+ <div class="center-box">
+        <h1>Категории товаров (8 категорий)</h1>
+        <div class="wrap">
+            <a href="../Вторая_вкладка/index.second.html">
             <div class="item">
-                <div class="rgb">плюс</div>
-                <div class="bottom">
-                    <span>Баллы</span>
+                <div class="item-title">
+                    <h2>Смартфоны</h2>
+                    <p>15 товаров, 12 с гарантией</p>
+                </div>
+                <div class="menu-img">
+                    <img width="100%"  src="https://phonesdata.com/files/models/Apple-iPhone-12-Pro-602.jpg">
                 </div>
             </div>
-            </div>
-            <div class="right">
+        </a>
+            <a href="../Вторая_вкладка/index.second.html">
             <div class="item">
-                <img src="../images/box.png" class="box-img">
-                <div class="bottom bottom2">
-                    <span>Заказы</span>
+                <div class="item-title">
+                    <h2>Смартфоны</h2>
+                    <p>15 товаров, 12 с гарантией</p>
                 </div>
+                <div class="menu-img">
+                    <img width="100%"  src="https://phonesdata.com/files/models/Apple-iPhone-12-Pro-602.jpg">
+                </div>
+            </div>
+        </a>
+            <a href="../Вторая_вкладка/index.second.html">
+            <div class="item">
+                <div class="item-title">
+                    <h2>Смартфоны</h2>
+                    <p>15 товаров, 12 с гарантией</p>
+                </div>
+                <div class="menu-img">
+                    <img width="100%"  src="https://phonesdata.com/files/models/Apple-iPhone-12-Pro-602.jpg">
+                </div>
+            </div>
+        </a>
+            <a href="../Вторая_вкладка/index.second.html">
+            <div class="item">
+                <div class="item-title">
+                    <h2>Смартфоны</h2>
+                    <p>15 товаров, 12 с гарантией</p>
+                </div>
+                <div class="menu-img">
+                    <img width="100%"  src="https://phonesdata.com/files/models/Apple-iPhone-12-Pro-602.jpg">
+                </div>
+            </div>
+        </a>
+            <a href="../Вторая_вкладка/index.second.html">
+            <div class="item">
+                <div class="item-title">
+                    <h2>Смартфоны</h2>
+                    <p>15 товаров, 12 с гарантией</p>
+                </div>
+                <div class="menu-img">
+                    <img width="100%"  src="https://phonesdata.com/files/models/Apple-iPhone-12-Pro-602.jpg">
+                </div>
+            </div>
+        </a>
+            <a href="../Вторая_вкладка/index.second.html">
+            <div class="item">
+                <div class="item-title">
+                    <h2>Смартфоны</h2>
+                    <p>15 товаров, 12 с гарантией</p>
+                </div>
+                <div class="menu-img">
+                    <img width="100%"  src="https://phonesdata.com/files/models/Apple-iPhone-12-Pro-602.jpg">
+                </div>
+            </div>
+        </a>
+            <a href="../Вторая_вкладка/index.second.html">
+            <div class="item">
+                <div class="item-title">
+                    <h2>Смартфоны</h2>
+                    <p>15 товаров, 12 с гарантией</p>
+                </div>
+                <div class="menu-img">
+                    <img width="100%"  src="https://phonesdata.com/files/models/Apple-iPhone-12-Pro-602.jpg">
+                </div>
+            </div>
+        </a>
+            <a href="../Вторая_вкладка/index.second.html">
+            <div class="item">
+                <div class="item-title">
+                    <h2>Смартфоны</h2>
+                    <p>15 товаров, 12 с гарантией</p>
+                </div>
+                <div class="menu-img">
+                    <img width="100%"  src="https://phonesdata.com/files/models/Apple-iPhone-12-Pro-602.jpg">
+                </div>
+            </div>
+        </a>
+           
+           
+        </div>
+    </div>
+    <div class="left">
+        <div class="title">
+            <h2>Холодильники</h2>
+            <div class="items">
+                <p>Холодильники</p>
+                <p>Холодильники</p>
+                <p>Холодильники</p>
+                <p>Холодильники</p>
+                <p>Холодильники</p>
             </div>
         </div>
-        <div class="right">
-            <div class="item">
-                <img src="../images/favourites.png" class="fovourite-img">
-                <div class="bottom favoirite_">
-                    <span>Избранное</span>
-                </div>
+        <div class="title">
+            <h2>Телефоны</h2>
+            <div class="items">
+                <p>Телефоны</p>
+                <p>Телефоны</p>
+                <p>Телефоны</p>
+                <p>Телефоны</p>
+                <p>Телефоны</p>
             </div>
         </div>
-        <div class="right">
-            <div class="item">
-                <img src="../images/cart.png" class="cart-img">
-                <div class="bottom cart">
-                    <span>Корзина</span>
-                </div>
+
+        <div class="title">
+            <h2>Наушники</h2>
+            <div class="items">
+                <p>Наушники</p>
+                <p>Наушники</p>
+                <p>Наушники</p>
+                <p>Наушники</p>
+                <p>Наушники</p>
             </div>
         </div>
-        <button class="sign-in">Войти</button>
+
+        <div class="title">
+            <h2>Ноутбуки</h2>
+            <div class="items">
+                <p>Ноутбуки</p>
+                <p>Ноутбуки</p>
+                <p>Ноутбуки</p>
+                <p>Ноутбуки</p>
+                <p>Ноутбуки</p>
+            </div>
+        </div>
+        <div class="title">
+            <h2>Мониторы</h2>
+            <div class="items">
+                <p>Мониторы</p>
+                <p>Мониторы</p>
+                <p>Мониторы</p>
+                <p>Мониторы</p>
+                <p>Мониторы</p>
+            </div>
+        </div>
+        <div class="title">
+            <h2>Наушники</h2>
+            <div class="items">
+                <p>Наушники</p>
+                <p>Наушники</p>
+                <p>Наушники</p>
+                <p>Наушники</p>
+                <p>Наушники</p>
+            </div>
+        </div>
+
     </div>
     
-    <!-- Второй этаж -->
-    <div class="second-floor">
-    </div>
+
+
+   
 </body>
 </html>

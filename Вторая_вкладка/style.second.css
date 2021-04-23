@@ -1,0 +1,308 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Gilroy1', sans-serif;
+    outline: none;
+    user-select: none;
+}
+
+.left
+{
+    max-width: 250px;
+    max-height: 100vh;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.left::-webkit-scrollbar{
+    background-color: #fff;
+    box-shadow: 0 -2px 2px rgb(202, 200, 200);
+}
+
+.left::-webkit-scrollbar-thumb
+{
+    cursor: pointer;
+    background-color: #D6D6D6;
+}
+
+.title .items p
+{
+    user-select: none;
+    cursor: pointer;
+    font-size: 13px;
+    color: grey;
+    margin: 10px 0;
+    font-family: 'Gilroy1', sans-serif;
+}
+
+.title .items p:hover
+{
+    text-decoration: underline;
+}
+.title
+{
+    margin-bottom: 40px;
+}
+
+.left label
+{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.left input
+{
+    padding: 7px 7px;
+    border: none;
+    box-shadow: 0 3px 6px #c1c1c2;
+    border-radius: 7px;
+}
+
+.left .inpt
+{
+    margin-top: 10px;
+}
+
+#inpt
+{
+    margin-top: 10px;
+}
+.sale
+{
+    margin-top: 40px;
+}
+.sale span, p 
+{   font-weight: 600;
+    cursor: pointer;
+}
+.yes
+{
+    
+    margin-right: 10px;
+    color: #696969;
+}
+
+.no
+{
+    color: #004dff;
+}
+.sale h3
+{
+    margin-bottom: 15px;
+}
+
+.warranty
+{
+    margin-top: 20px;
+}
+
+.performance
+{
+    margin-top: 20px;
+}
+
+.performance p
+{
+    margin: 7px 0;
+    color: #696969;
+}
+
+.color-select
+{
+    display: flex;
+    margin-top: 30px;
+}
+
+.color-select .item
+{
+    cursor: pointer;
+    margin: 0 7px;
+    box-shadow: 0 7px 3px #D6D6D6;
+}
+
+.color-select .item:nth-child(1)
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.color-select .item:nth-child(2)
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #656565;
+}
+
+.color-select .item:nth-child(3)
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.buttuns 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.buttuns button
+{
+    width: 90%;
+    height: 40px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #0073FF;
+}
+
+.buttuns button:nth-child(2)
+{
+    margin-top: 10px;
+    background-color: #656565;
+}
+
+
+.header
+{
+    width: 70%;
+    top: 5%;
+    left: 20%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+}
+
+.header .img, form, .money
+{
+    margin-right: 15px;
+}
+
+.header form input
+{
+    padding: 8px 17px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px #D6D6D6;
+}
+
+.header form button
+{
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0073FF;
+    color: #fff;
+    font-size: 15px;
+}
+
+.header .money span
+{
+    font-weight: 600;
+}
+
+.box
+{
+    width: 80%;
+    left: 20%;
+    top: 15%;
+    position: absolute;
+}
+
+.box .title h1
+{
+    font-size: 45px;
+    color: #2b2e3f;
+    margin-bottom: 40px;
+}
+
+.box .block
+{
+    width: 300px;
+    height: 250px;
+    box-shadow: 0 3px 6px #D6D6D6;
+    border-radius: 10px;
+    /* padding: 20px; */
+    overflow: hidden;
+    position: relative;
+    margin: 10px 20px;
+}
+
+.wrapper
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block .top
+{
+    padding: 20px;
+}
+
+.box .block .item 
+{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.box .block .item .span1
+{
+    font-weight: 600;
+    color: #a19d9d;
+}
+
+.box .block .item .span3, .bottom span
+{
+    cursor: pointer;
+    font-weight: 600;
+    color: #0073FF;
+}
+
+.bottom span:hover
+{
+    text-decoration: underline;
+}
+
+.box .block .bottom .span3
+{
+    position: absolute;
+    top: 45%;
+    left: 20px;
+}
+
+.bottom img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+.bottom .heart
+{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    bottom: 10px;
+    right: 20px;
+}
+
+img
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,199 @@
+/* ----------------------       ---------------------- */
+
+/* ---------------------- Media ---------------------- */
+
+@media only screen and (max-width: 1960px)
+
+{
+    .wrap
+    {
+        grid-template-columns: 300px 300px 300px 300px;
+        grid-auto-rows: 250px;
+    }
+
+    .title .items p
+    {
+        user-select: none;
+        cursor: pointer;
+        font-size: 16px;
+        color: grey;
+    }
+}
+
+@media only screen and (max-width: 1547px)
+
+{
+    .wrap
+    {
+        grid-template-columns: 270px 270px 270px 270px;
+        grid-auto-rows: 240px;
+    }
+}
+
+@media only screen and (max-width: 1415px)
+
+{
+    .wrap
+    {
+        grid-template-columns: 300px 300px 300px;
+        grid-auto-rows: 250px;
+    }
+}
+
+@media only screen and (max-width: 1213px)
+
+{
+    .wrap
+    {
+        grid-template-columns: 250px 250px 250px;
+        grid-auto-rows: 200px;
+    }
+
+    .center-box h1 
+    {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1000px)
+
+{
+    .wrap
+    {
+        grid-template-columns: 300px 300px;
+        grid-auto-rows: 250px;
+    }
+}
+
+@media only screen and (max-width: 944px)
+
+{
+    .wrap
+    {
+        grid-template-columns: 270px  270px;
+        grid-auto-rows: 200px;
+    }
+
+    .center-box h1
+    {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 863px)
+
+{
+    .center-box h1
+    {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 809px)
+
+{
+    .center-box h1
+    {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 809px)
+
+{
+    .center-box h1
+    {
+        font-size: 26px;
+    }
+
+    .wrap
+    {
+        grid-template-columns: 250px  250px;
+        grid-auto-rows: 200px;   
+    }
+}
+
+@media only screen and (max-width: 700px)
+
+{
+    .wrap
+    {
+        grid-template-columns: 350px;
+        grid-auto-rows: 200px;
+    }
+
+    .center-box h1
+    {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 650px)
+
+{
+    .center-box h1
+    {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 610px)
+{
+    .center-box h1
+    {
+        font-size: 22px;
+    }
+
+    .wrap
+    {
+        grid-template-columns: 320px;
+        grid-auto-rows: 200px;
+    }
+}
+
+@media only screen and (max-width: 593px)
+
+{
+    .center-box h1
+    {
+        font-size: 20px;
+    }
+    
+    .wrap
+    {
+        grid-template-columns: 300px;
+        grid-auto-rows: 200px;
+    }
+}
+
+@media only screen and (max-width: 540px)
+
+{
+    .center-box h1
+    {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 535px)
+
+{
+    .wrap
+    {
+        grid-template-columns: 290px ;
+    }
+}
+
+@media only screen and (max-width: 486px)
+
+{
+    .center-box h1
+    {
+        font-size: 16px;
+    }
+    
+    .wrap
+    {
+        grid-template-columns: 270px;
+    }
+}
