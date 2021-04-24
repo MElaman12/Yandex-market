@@ -6,7 +6,8 @@ let categories = [
     { id: 5, name: 'Телевизоры', img: 'https://avatars.mds.yandex.net/get-mpic/4412310/img_id387231736494264950.jpeg/8hq' },
     { id: 6, name: 'Мониторы', img: 'https://cdn.shopify.com/s/files/1/0292/5975/9756/t/15/assets/new_front_angle_1024x.png?v=15295455487753216210' }
 ]
-
+    import('../js/main')
+    
 let brands = [
     { id: 1, name: 'Samsung' },
     { id: 2, name: 'Xiaomi' },
@@ -405,7 +406,7 @@ let fridge_arr = [{
     sale: '490$',
     warranty: false,
     cashback: 4,
-    img:'https://www.hificorp.co.za/media/catalog/product/cache/7ce9addd40d23ee411c2cc726ad5e7ed/1/0/10114206_DEFY_437LT_FRIDGE_FREEZER_WD_METALLIC_INOX_DAC700_124c.jpg'
+    img:'https://m.media-amazon.com/images/I/71nqCR56Z3L._AC_.jpg'
 },
 {
     id: Math.random().toString().slice(2, 10),
@@ -429,7 +430,7 @@ let fridge_arr = [{
     sale: '300$',
     warranty: true,
     cashback: 3,
-    img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIJVPbD4VxJN3pkvsOL_KSDQQEawhc6pX9PQ&usqp=CAU'
+    img:'https://api.time.com/wp-content/uploads/2016/05/family_hub_black_stainless.jpg'
 },
 {
     id: Math.random().toString().slice(2, 10),
@@ -441,7 +442,7 @@ let fridge_arr = [{
     sale: '450$',
     warranty: true,
     cashback: 4,
-    img:'https://i1.adis.ws/s/euronics/458R5017W-ms/Catalogue/Refrigeration/Larder-Fridges/Freestanding-Larder-Fridges/Under-Counter-Larder-Fridges/Lec-R5017W-50cm-Undercounter-Fridge---White.jpg?locale=en-GB,en-*,*&$product$'
+    img:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyyAnqiWimDC5R9itsZUR0gfIQfnDs9FZXKA&usqp=CAU'
 }
 ];
 
@@ -474,3 +475,29 @@ let balance = document.querySelectorAll('.balance')
     balance[2].innerText = fridge_arr[2].sale
     balance[3].innerText = fridge_arr[3].sale
     balance[4].innerText = fridge_arr[4].sale
+
+
+let heart = document.querySelectorAll('.heart')
+let bottom = document.querySelectorAll('.bottom')
+let hearts = document.querySelectorAll('.heart-active')
+let cart_counter = document.querySelector('.cart-counter').innerText 
+    
+
+for(let item of heart)
+{
+    item.onclick = () => {
+       for(let item2 of hearts){
+           item2.classList.add('heart-on')
+             cart_counter++
+        } 
+    }
+    
+    for(let item2 of hearts){
+        item2.onclick = () => {
+            item2.classList.remove('heart-on')
+            cart_counter--
+        }
+    }
+}
+
+

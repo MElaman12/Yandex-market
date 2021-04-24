@@ -9,6 +9,13 @@
     user-select: none;
 }
 
+img
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .left
 {
     max-width: 250px;
@@ -189,6 +196,30 @@
     margin-right: 15px;
 }
 
+.header .img .cart 
+{
+    position: relative;
+
+}
+
+.header .img .cart-counter
+{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 12px;
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+    justify-content: center;
+    top: -5px;
+    left: 33px;
+    overflow: hidden;
+}
+
 .header form input
 {
     padding: 8px 17px;
@@ -230,7 +261,7 @@
 .box .block
 {
     width: 300px;
-    height: 250px;
+    height: 350px;
     box-shadow: 0 3px 6px #D6D6D6;
     border-radius: 10px;
     /* padding: 20px; */
@@ -279,11 +310,11 @@
 .box .block .bottom .span3
 {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 20px;
 }
 
-.bottom img
+.bottom .box-img    
 {
     width: 100%;
     height: 100%;
@@ -295,14 +326,25 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    z-index: 1;
+    /* z-index: 1; */
     bottom: 10px;
     right: 20px;
+    cursor: pointer;
 }
 
-img
+.heart-active
 {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    z-index: 12;
+    bottom: 10px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.heart-on
+{
+    display: block;
 }
