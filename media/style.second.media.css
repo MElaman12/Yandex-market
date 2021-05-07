@@ -215,3 +215,11 @@
         left: 75px;
     } 
 }
+
+@media only screen and (max-width: 910px)
+{
+    .cart-heart
+    {
+        margin-left: 60px ;
+    }
+}
